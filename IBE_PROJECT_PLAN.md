@@ -19,6 +19,14 @@ The demonstration should:
 4. Decrypt successfully with the matching identity key.
 5. Reject use of a different identity's key and modification of protected ciphertext or metadata.
 
+| Component | What you would build in Python |
+|---|---|
+| IBE workflow | Setup, email identity handling, key issuance, encryption, and decryption using an IBE library |
+| Certificate-based baseline | A local certificate authority, recipient certificates, certificate validation, and hybrid encryption using cryptographic libraries |
+| Security tests | Wrong-recipient keys, modified ciphertexts, invalid certificates, replay, and simulated key compromise |
+| Benchmarks | Repeated measurements of execution time, ciphertext size, and key/certificate sizes |
+| Demo | Commands that run both workflows and display their results |
+
 The prototype does not need a mail server, browser interface, or deployed authentication service. Explain that real email ownership verification and secure private-key delivery are deployment requirements, not features demonstrated by the local issuance command.
 
 ## Decisions to settle first
@@ -28,14 +36,6 @@ The prototype does not need a mail server, browser interface, or deployed authen
 - Available IBE implementations: installation feasibility, exact scheme variant, supported security properties, licensing, and examples that run correctly.
 - Identity encoding: document a deterministic rule; do not silently lowercase the whole address without defining the intended identity semantics.
 - Construction details: distinguish the selected IBE variant's guarantees from authenticated symmetric encryption. Do not claim hybrid authenticated encryption alone proves chosen-ciphertext security for an arbitrary IBE scheme.
-
-| Component | What you would build in Python |
-|---|---|
-| IBE workflow | Setup, email identity handling, key issuance, encryption, and decryption using an IBE library |
-| Certificate-based baseline | A local certificate authority, recipient certificates, certificate validation, and hybrid encryption using cryptographic libraries |
-| Security tests | Wrong-recipient keys, modified ciphertexts, invalid certificates, replay, and simulated key compromise |
-| Benchmarks | Repeated measurements of execution time, ciphertext size, and key/certificate sizes |
-| Demo | Commands that run both workflows and display their results |
 
 ## Proposed division of work
 
