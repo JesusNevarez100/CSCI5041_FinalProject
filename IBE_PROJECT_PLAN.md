@@ -29,6 +29,14 @@ The prototype does not need a mail server, browser interface, or deployed authen
 - Identity encoding: document a deterministic rule; do not silently lowercase the whole address without defining the intended identity semantics.
 - Construction details: distinguish the selected IBE variant's guarantees from authenticated symmetric encryption. Do not claim hybrid authenticated encryption alone proves chosen-ciphertext security for an arbitrary IBE scheme.
 
+| Component | What you would build in Python |
+|---|---|
+| IBE workflow | Setup, email identity handling, key issuance, encryption, and decryption using an IBE library |
+| Certificate-based baseline | A local certificate authority, recipient certificates, certificate validation, and hybrid encryption using cryptographic libraries |
+| Security tests | Wrong-recipient keys, modified ciphertexts, invalid certificates, replay, and simulated key compromise |
+| Benchmarks | Repeated measurements of execution time, ciphertext size, and key/certificate sizes |
+| Demo | Commands that run both workflows and display their results |
+
 ## Proposed division of work
 
 | Owner | Primary responsibility | Review responsibility |
