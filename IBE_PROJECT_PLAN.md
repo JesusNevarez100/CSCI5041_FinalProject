@@ -4,6 +4,9 @@ Deadline: Tuesday, December 1, 2026.
 Source: CSCI 4041 Final Project Proposal.docx supplied by the project team.
 Status: Starting from the proposal; no implementation or experimental results verified yet.
 
+## Concrete Question
+What convenience does IBE provide, and what performance and true costs come with it?
+
 ## Minimum deliverable
 
 A local command-line demonstration of hybrid identity-based encryption, supported by a documented threat model, functional tests, measurements, and presentation slides. Select and verify an existing IBE implementation before committing to a language or library. Do not implement pairing arithmetic from scratch or substitute ordinary public-key encryption and label it IBE.
