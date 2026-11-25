@@ -1,0 +1,2 @@
+charm-crypto-framework==0.62
+cryptography==50.0.2
