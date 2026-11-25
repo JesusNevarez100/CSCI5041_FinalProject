@@ -1,0 +1,16 @@
+SIMULATION: demonstrates the authorization gate, not mailbox ownership.
+No SMTP service, credentials or network access are required.
+Recipient email [alice@example.com]: 1. Encrypted message before issuing the recipient key.
+
+--- SIMULATED INBOX: no email was sent ---
+To: example@example.com
+Verification code: 20161507
+Expires in 10 minutes; maximum five attempts; single use.
+--- End simulated inbox ---
+
+2. Key issuance is gated on the code. Try a wrong code first if desired.
+Enter the simulated inbox code: DENIED: verification failed. Attempts remaining: 4.
+Enter the simulated inbox code: 3. ACCEPTED: authorization challenge passed; recipient key issued.
+4. Decrypted: This message was encrypted before simulated authorized enrollment.
+5. PASS: reusing the code was denied.
+Delivery was simulated; real mailbox control was not verified.

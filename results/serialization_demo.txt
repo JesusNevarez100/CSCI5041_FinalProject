@@ -1,0 +1,3 @@
+PASS: saved, loaded and decrypted artifacts/message.json (796 JSON bytes)
+Public parameters and private keys remain in memory for this demo.
+The encrypted file alone cannot recreate them after exit.

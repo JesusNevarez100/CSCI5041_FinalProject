@@ -1,0 +1,44 @@
+=== Hash implementation ===
+    def hashToZn(self, value):
+        if type(value) == pc_element:
+            h = hashlib.new(self.hash_type)
+            h.update(self.group.serialize(value))
+            #print "digest => %s" % h.hexdigest()
+            # get raw bytes of digest and hash to Zr
+            val = h.digest()
+            return integer(int(self.group.hash(val, ZR)))
+            # do something related to that
+        if type(value) == integer:
+            str_value = int2Bytes(value)
+            #print("str_value =>", str_value)
+            #val = self.group.hash(str_value, ZR)
+            #print("hash =>", val)
+            return integer(int(self.group.hash(str_value, ZR)))
+        return None
+
+
+=== Group configuration ===
+Security parameter: 1024
+Message size: 128
+
+=== Masking results ===
+Trials: 20
+
+Sigma:
+  Minimum bits: 1018
+  Maximum bits: 1024
+  Average bits: 1022.5
+
+Sigma mask:
+  Minimum bits: 220
+  Maximum bits: 224
+  Average bits: 222.8
+
+Message mask:
+  Minimum bits: 221
+  Maximum bits: 224
+  Average bits: 222.75
+
+Encoded AES key storage: 264 bits
+Encoded AES key integer: 257 bits
+Secret AES key: 256 bits

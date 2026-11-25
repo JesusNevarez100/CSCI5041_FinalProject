@@ -1,0 +1,35 @@
+test_fresh_encryption (test_certificate_baseline.BaselineTests.test_fresh_encryption) ... ok
+test_invalid_certificate_profiles (test_certificate_baseline.BaselineTests.test_invalid_certificate_profiles) ... ok
+test_modified_certificate (test_certificate_baseline.BaselineTests.test_modified_certificate) ... ok
+test_roundtrip (test_certificate_baseline.BaselineTests.test_roundtrip) ... ok
+test_untrusted_ca (test_certificate_baseline.BaselineTests.test_untrusted_ca) ... ok
+test_validity_intervals (test_certificate_baseline.BaselineTests.test_validity_intervals) ... ok
+test_wrong_email (test_certificate_baseline.BaselineTests.test_wrong_email) ... ok
+test_wrong_key_and_tampering (test_certificate_baseline.BaselineTests.test_wrong_key_and_tampering) ... ok
+test_byte_roundtrips (test_certificate_serialization.CertificateSerializationTests.test_byte_roundtrips) ... ok
+test_file_size_limit (test_certificate_serialization.CertificateSerializationTests.test_file_size_limit) ... ok
+test_files_and_no_overwrite (test_certificate_serialization.CertificateSerializationTests.test_files_and_no_overwrite) ... ok
+test_invalid_fields (test_certificate_serialization.CertificateSerializationTests.test_invalid_fields) ... ok
+test_parsing_is_not_authentication (test_certificate_serialization.CertificateSerializationTests.test_parsing_is_not_authentication) ... ok
+test_attempt_limit (test_email_verification.VerificationTests.test_attempt_limit) ... ok
+test_bound_identity_and_single_use (test_email_verification.VerificationTests.test_bound_identity_and_single_use) ... ok
+test_cross_challenge_code (test_email_verification.VerificationTests.test_cross_challenge_code) ... ok
+test_expiry (test_email_verification.VerificationTests.test_expiry) ... ok
+test_failed_delivery_cannot_issue (test_email_verification.VerificationTests.test_failed_delivery_cannot_issue) ... ok
+test_rate_limit_and_replacement (test_email_verification.VerificationTests.test_rate_limit_and_replacement) ... ok
+test_smtp_requires_tls_before_login (test_email_verification.VerificationTests.test_smtp_requires_tls_before_login) ... ok
+test_challenge_then_decrypt (test_email_verification.VerifiedWorkflowIntegration.test_challenge_then_decrypt) ... ok
+test_deferred_enrollment (test_hybrid.HybridTests.test_deferred_enrollment) ... ok
+test_fresh_encryptions (test_hybrid.HybridTests.test_fresh_encryptions) ... ok
+test_message_shapes (test_hybrid.HybridTests.test_message_shapes) ... ok
+test_tampering (test_hybrid.HybridTests.test_tampering) ... ok
+test_wrong_recipient (test_hybrid.HybridTests.test_wrong_recipient) ... ok
+test_byte_roundtrips (test_serialization.SerializationTests.test_byte_roundtrips) ... ok
+test_file_and_no_overwrite (test_serialization.SerializationTests.test_file_and_no_overwrite) ... ok
+test_malformed (test_serialization.SerializationTests.test_malformed) ... ok
+test_valid_structure_does_not_imply_authenticity (test_serialization.SerializationTests.test_valid_structure_does_not_imply_authenticity) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 2.621s
+
+OK

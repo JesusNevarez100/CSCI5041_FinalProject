@@ -1,0 +1,6 @@
+1. Local CA created; recipient generated a key and received a certificate.
+2. Sender validated the certificate and encrypted the message.
+3. Recovered: Certificate-based hybrid encryption baseline.
+PASS: certificate for the wrong email rejected
+PASS: modified payload rejected
+Issuance is trusted/simulated; no mailbox verification or public PKI lookup.

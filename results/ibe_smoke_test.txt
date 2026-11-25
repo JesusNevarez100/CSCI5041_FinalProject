@@ -1,0 +1,6 @@
+Python: 3.11.15; architecture: x86_64
+Charm: 0.62
+PASS: encrypt first, issue recipient key later, decrypt
+PASS: 24 encoded AES-256 keys recovered exactly
+PASS: invalid input and malformed key encodings rejected
+Smoke test complete; no security-level or attack-resistance claim

@@ -1,0 +1,15 @@
+Wed Nov 25 15:53:45 MST 2026
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+x86_64
+Python 3.11.15
+gmp 6.3.0
+openssl@3 3.6.1
+pbc 1.0.0
+cffi==2.1.1
+charm-crypto-framework==0.62
+cryptography==50.0.2
+pycparser==3.12
+pyparsing==3.3.3
+8cebea04902b72e38f62d0732d31f4cdc9540817

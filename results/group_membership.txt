@@ -1,0 +1,46 @@
+Group membership investigation
+Parameters: MNT224, secparam=1024
+Trials per group: 20
+
+ZR:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
+
+G1:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
+
+G2:
+  Generated membership: 0/20
+  Deserialized membership: 0/20
+  Serialization roundtrip: 20/20
+
+GT:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
+Group membership investigation
+Parameters: MNT224, secparam=1024
+Trials per group: 20
+
+ZR:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
+
+G1:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
+
+G2:
+  Generated membership: 0/20
+  Deserialized membership: 0/20
+  Serialization roundtrip: 20/20
+
+GT:
+  Generated membership: 20/20
+  Deserialized membership: 20/20
+  Serialization roundtrip: 20/20
