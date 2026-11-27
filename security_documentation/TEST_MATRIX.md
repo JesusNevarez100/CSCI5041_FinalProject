@@ -27,6 +27,7 @@ All accenptance demos completed successfully.
 # Additional Security Experiments 
 
 | ID | Experiment | Expected Outcome | Observed Outcome |
+| --- | --- | --- | --- |
 | SEC-01 | IBE replay | Accepted | Expected behavior confirmed |
 | SEC-02 | RSA replay | Accepted | Expected behavior confirmed |
 | SEC-03 | PKG compromise | Plaintext recovered | Expected behavior confirmed | 
